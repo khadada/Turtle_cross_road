@@ -1,0 +1,8 @@
+The objects in my game are:
+1- create turtle
+2- create cars
+3- score_board
+4- add mutiple cars random colors set and  moves randomely via x axis
+5- check if turtle arrive to the top of the screen 
+	Yes = score up and restart the game and keep track the score.
+	No = write You killed "rip" 
