@@ -6,7 +6,7 @@ class Timmy(Turtle):
         super().__init__()
         self.shape('turtle')
         self.color("black")
-        self.shapesize(1.2, 1.2)
+        self.shapesize(1.5, 1.5)
         self.penup()
         self.setheading(90)
-        # position
+        self.goto(0, -220)
