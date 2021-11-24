@@ -19,3 +19,4 @@ class Timmy(Turtle):
         if self.ycor() > -220:
             self.goto(0, self.ycor() - STEP_DISTANCE)
 
+

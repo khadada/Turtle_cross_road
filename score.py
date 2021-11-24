@@ -10,7 +10,7 @@ class Score(Turtle):
         self.penup()
         self.color('Black')
         self.score = 0
-        # position
+        self.goto(0, 180)
         self.update_score()
 
     def update_score(self):
@@ -20,3 +20,7 @@ class Score(Turtle):
     def score_up(self):
         self.score += 1
         self.update_score()
+
+    def game_over(self):
+        self.goto(0, 0)
+        self.write('Game over', align=ALIGNMENT, font=FONT)
