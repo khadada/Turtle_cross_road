@@ -8,4 +8,5 @@ class Timmy(Turtle):
         self.color("black")
         self.shapesize(1.2, 1.2)
         self.penup()
+        self.setheading(90)
         # position
