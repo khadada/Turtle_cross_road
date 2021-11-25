@@ -25,11 +25,9 @@ class Car:
             car.goto(300, random_y)
             self.all_cars.append(car)
 
-
     def move(self):
         for car in self.all_cars:
             car.backward(MOVE_DISTANCE)
 
     def gas(self):
         self.speed_car *= 0.2
-

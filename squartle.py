@@ -3,6 +3,7 @@ STEP_DISTANCE = 20
 FINISH_LINE = 180
 STARTING_POSITION = (0, -220)
 
+
 class Timmy(Turtle):
     def __init__(self):
         super().__init__()
