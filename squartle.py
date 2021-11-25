@@ -13,10 +13,12 @@ class Timmy(Turtle):
         self.goto(0, -220)
 
     def move_up(self):
-        self.goto(0, self.ycor() + STEP_DISTANCE)
+        if self.ycor() < 220:
+            self.goto(0, self.ycor() + STEP_DISTANCE)
 
     def move_down(self):
         if self.ycor() > -220:
             self.goto(0, self.ycor() - STEP_DISTANCE)
 
-
+    def level_up(self):
+        self.goto(0, -220)

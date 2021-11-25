@@ -15,15 +15,18 @@ screen.tracer(0)
 game_is_on = True
 while game_is_on:
     screen.update()
-    sleep(.1)
+    sleep(car.speed_car)
     car.create_car()
     car.move()
     for ca in car.all_cars:
         if timmy.distance(ca) < 20:
             score.game_over()
             game_is_on = False
-
-
+    if timmy.ycor() > 180:
+        print('You win')
+        score.score_up()
+        timmy.level_up()
+        car.gas()
 
 
 screen.exitonclick()
