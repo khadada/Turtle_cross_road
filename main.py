@@ -22,10 +22,10 @@ while game_is_on:
         if timmy.distance(ca) < 20:
             score.game_over()
             game_is_on = False
-    if timmy.ycor() > 180:
+    if timmy.is_at_finish_line():
         print('You win')
         score.score_up()
-        timmy.level_up()
+        timmy.go_to_start()
         car.gas()
 
 
